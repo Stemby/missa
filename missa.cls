@@ -2,8 +2,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{missa}
 
+\RequirePackage{keyval}
 %\RequirePackage{ifthen}
-%\RequirePackage[a4paper]{geometry}[2010-02-12] % I have to declare a page format: why?
+\RequirePackage[a5paper]{geometry}[2010-02-12] % I have to declare a page format: why?
 %\RequirePackage{color}
 
 \newcommand{\missa@style}{leaflet} % default style
