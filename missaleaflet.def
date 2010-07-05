@@ -1,0 +1,6 @@
+% missaleaflet.def
+
+% No page numbers
+\pagestyle{empty}
+
+%\newcommand{\m@rgin}{1.5cm}
