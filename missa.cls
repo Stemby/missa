@@ -2,8 +2,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{missa}
 
-\LoadClass[11pt]{article}
-
 %\RequirePackage{ifthen}
 %\RequirePackage[a4paper]{geometry}[2010-02-12] % I have to declare a page format: why?
 %\RequirePackage{color}

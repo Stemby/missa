@@ -1,4 +1,5 @@
 % missaleaflet.def
+\LoadClass[11pt,twocolumn]{article}
 
 % No page numbers
 \pagestyle{empty}
