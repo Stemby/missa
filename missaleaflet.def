@@ -1,9 +1,0 @@
-% missaleaflet.def
-\LoadClass[11pt,twocolumn]{article}
-\setlength{\columnsep}{10mm}
-
-% Paper size: 2 * B5 JIS = B4 JIS
-\geometry{b5j,margin=16mm}
-
-% No page numbers
-\pagestyle{empty}

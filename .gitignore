@@ -1,7 +1,13 @@
 *~
 *.backup
+*.gz
 *.aux
+*.lil
 *.log
+*.eps
 *.pdf
 geometry.*
 bibleref.sty
+lilypond.sty
+config.ly
+testlily-*

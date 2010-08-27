@@ -1,12 +1,35 @@
 % test.tex 
-\documentclass[leaflet]{missa}
+\documentclass[leaflet,ambrosian,litcolor=red]{missa}
 \usepackage[utf8x]{inputenc}
-\usepackage[latin]{babel}
+\usepackage[italian]{babel}
 \usepackage[T1]{fontenc}
 
+%\usepackage[french]{babel}
 \usepackage{lipsum}
+\usepackage[italian]{layout}
+
+%\usepackage[short]{datetime}
+
+\title{La Messa}
+\author{Carlo Stemberger}
 
 \begin{document}
-\section{One}
-\lipsum
+%\maketitle
+
+%\dayofweekname{31}{10}{2002}
+
+\section{Liturgia vigiliare vespertina}
+\lipsum[1]
+\section{Riti di introduzione}
+\subsection{All'ingresso}
+\lipsum[2]
+\section{Liturgia della parola}
+\subsection{Lettura}
+\subsection{Salmo}
+\lipsum[1]
+\lilypondfile{lily/testlily}
+\lipsum[1]
+
+\onecolumn \pagebreak \twocolumn Larghezza colonna: \the\columnwidth
+\onecolumn \layout \twocolumn
 \end{document}
