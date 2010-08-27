@@ -14,11 +14,14 @@
 
 \newcommand{\missa@style}{leaflet} % default style
 \newcommand{\missa@litcolor}{DartmouthGreen} % liturgical colour
+\newcommand{\missa@rite}{roman} % rite
 
 % Styles
 \DeclareOptionX{leaflet}{}
 \DeclareOptionX{booklet}{\renewcommand{\missa@style}{booklet}}
-\define@choicekey+{missa.cls}{litcolor}[\val\nr]{green,violet,white,red,rose,black}[green]{%
+
+\define@choicekey+{missa.cls}{litcolor}[\val\nr]{%
+green,violet,white,red,rose,black}[green]{%
   \ifcase\nr\relax
     \renewcommand{\missa@litcolor}{DartmouthGreen}
   \or
@@ -35,6 +38,13 @@
 }{%
   \ClassWarning{missa}{erroneous input ignored}%
 }
+
+\define@choicekey+{missa.cls}{rite}{roman,ambrosian}[roman]{%
+  \renewcommand{\missa@rite}{#1}
+}{%
+  \ClassWarning{missa}{erroneous input ignored}%
+}
+
 \ProcessOptionsX
 
 % Input style
