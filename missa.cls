@@ -47,8 +47,10 @@ green,violet,white,red,rose,black}[green]{%
 
 \ProcessOptionsX
 
+\LoadClass[11pt]{article}
+
 % Input style
-\input{missa\missa@style.tex}
+\RequirePackage{missa\missa@style}
 
 % Paragraphs: no indent
 \setlength{\parindent}{0pt}
