@@ -7,10 +7,9 @@
 
 %\pagestyle{empty} % no page numbers
 
-\usepackage[small,center,compact]{titlesec} % is it possible to put it into the .cls file?
-%\usepackage{titlesec} % is it possible to put it into the .cls file?
-%\titlelabel{}
-%\titleformat{\section}{}{}{0pt}{%
-%  \color{white}%
-%  \colorbox{\missa@litcolor}
-%}
+%\usepackage[small,center,compact]{titlesec} % is it possible to put it into the .cls file?
+\usepackage{titlesec} % is it possible to put it into the .cls file?
+\titleformat{\section}{\large\bfseries\color{\missa@titlecolor}}{}{0pt}{%
+  \scshape
+  \colorbox{\missa@litcolor}
+  }

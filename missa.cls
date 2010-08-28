@@ -14,9 +14,10 @@
 
 \newcommand{\missa@style}{leaflet} % default style
 \newcommand{\missa@litcolor}{DartmouthGreen} % liturgical colour
+\newcommand{\missa@titlecolor}{white} % title colour
 \newcommand{\missa@rite}{roman} % rite
 
-% Styles
+% Options
 \DeclareOptionX{leaflet}{}
 \DeclareOptionX{booklet}{\renewcommand{\missa@style}{booklet}}
 
@@ -28,10 +29,12 @@ green,violet,white,red,rose,black}[green]{%
     \renewcommand{\missa@litcolor}{Violet}
   \or
     \renewcommand{\missa@litcolor}{#1}
+    \renewcommand{\missa@titlecolor}{black}
   \or
     \renewcommand{\missa@litcolor}{#1}
   \or
     \renewcommand{\missa@litcolor}{ClassicRose}
+    \renewcommand{\missa@titlecolor}{black}
   \or
     \renewcommand{\missa@litcolor}{#1}
   \fi
