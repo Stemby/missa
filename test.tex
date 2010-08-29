@@ -4,9 +4,7 @@
 \usepackage[italian]{babel}
 \usepackage[T1]{fontenc}
 
-%\usepackage[french]{babel}
 \usepackage{lipsum}
-\usepackage[italian]{layout}
 
 %\usepackage[short]{datetime}
 
@@ -20,16 +18,44 @@
 
 \section{Liturgia vigiliare vespertina}
 \lipsum[1]
+
 \section{Riti di introduzione}
 \subsection{All'ingresso}
-\lipsum[2]
+
+\subsection{Atto penitenziale}
+\priest{Fratelli carissimi, con fiducia disponiamoci al pentimento e riconosciamo i nostri peccati, perché il Signore, nella sua infinita misericordia, ci doni di partecipare a questa celebrazione con una coscienza pura e un cuore lieto e operoso.}
+
+\silence
+
+\priest[Don Albino]{Tu che ti sei fatto povero per arricchirci: \kyrie}
+
+\all{\kyrie}
+
+\priest{Tu che sei il difensore dei poveri e il rifugio dei deboli: \kyrie}
+
+\all{\kyrie}
+
+\priest{Tu che perdoni molto a chi molto ama: \kyrie}
+
+\all{\kyrie}
+
+\priest{Dio onnipotente abbia misericordia di noi, perdoni i nostri peccati e ci conduca alla vita eterna.} \hfill
+\all{\amen}
+
+\subsection{Gloria}
+\subsection{inizio dell'assemblea liturgica}
+\priest{Preghiamo.\hfill\silence \\ O Dio, che nel tuo ineffabile amore hai creato l'universo, donaci di adorarti sempre con tutto il nostro essere e di amare ogni uomo con affetto giusto e fraterno. Per Gesù~Cristo\dots}
+
+\all{\amen}
+
 \section{Liturgia della parola}
 \subsection{Lettura}
-\subsection{Salmo}
-\lipsum[1]
-\lilypondfile{lily/testlily}
-\lipsum[1]
 
-\onecolumn \pagebreak \twocolumn Larghezza colonna: \the\columnwidth
-\onecolumn \layout \twocolumn
+\subsection{Salmo}
+\all{Ascolta, Signore, il povero che t'invoca.}
+\lilypondfile{lily/testlily}
+\reader{Porgi l'orecchio, Signore, alle mie parole: intendi il mio lamento. Sii attento alla voce del mio grido, o mio re e mio Dio, perché a te, Signore, rivolgo la mia preghiera.}~\R
+
+\reader{Tu non sei un Dio che gode del male, non è tuo ospite il malvagio; gli stolti non resistono al tuo sguardo.}~\R
+
 \end{document}

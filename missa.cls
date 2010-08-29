@@ -50,6 +50,19 @@ green,violet,white,red,rose,black}[green]{%
 
 \ProcessOptionsX
 
+% Commands
+\newcommand{\priest}[2][S]{\textcolor{\missa@litcolor}{#1}\hspace{1em}#2}
+\newcommand{\all}[2][T]{\textcolor{\missa@litcolor}{#1}\hspace{1em}{\bfseries#2}}
+\newcommand{\reader}[2][L]{\textcolor{\missa@litcolor}{#1}\hspace{1em}#2}
+
+\newcommand{\amen}{Amen.}
+\newcommand{\tbtg}{Rendiamo grazie a Dio.}
+\newcommand{\kyrie}{Kyrie, el\'eison.}
+
+\newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Pausa di silenzio)}}
+
+\newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries R}}
+
 \LoadClass[11pt]{article}
 
 % Input style

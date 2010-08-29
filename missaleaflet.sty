@@ -1,15 +1,33 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{missaleaflet}
 
+\RequirePackage{xparse,calc}
+\DeclareDocumentCommand\makecolorbox{o m O{\width} O{c} m}{%
+  \IfNoValueTF{#1}{\colorbox{#2}}{\colorbox[#1]{#2}}%
+    {\makebox[#3-2\fboxsep][#4]{#5}}}
+\DeclareDocumentCommand\framecolorbox{o m m O{\width} O{c} m}{%
+  \IfNoValueTF{#1}{\fcolorbox{#2}{#3}}{\fcolorbox[#1]{#2}{#3}}%
+    {\makebox[#4-2\fboxsep-2\fboxrule][#5]{#6}}}
+
 % Paper size: 2 * B5 JIS = B4 JIS
 \geometry{b5j,margin=16mm,columnsep=8mm,twocolumn}
 \geometry{nohead}
 
 %\pagestyle{empty} % no page numbers
 
-%\usepackage[small,center,compact]{titlesec} % is it possible to put it into the .cls file?
 \usepackage{titlesec} % is it possible to put it into the .cls file?
-\titleformat{\section}{\large\bfseries\color{\missa@titlecolor}}{}{0pt}{%
-  \scshape
-  \colorbox{\missa@litcolor}
+\titleformat{\section}
+  {\large\bfseries\color{\missa@titlecolor}} % format
+  {}                          % label (the number)
+  {0pt}                       % separation between label and title
+  {%                          % before
+    \scshape
+    \framecolorbox{\missa@litcolor}{\missa@litcolor}[\columnwidth]
+  }
+\titleformat{\subsection}
+  {\large\bfseries\color{\missa@litcolor}} % format
+  {}                          % label (the number)
+  {0pt}                       % separation between label and title
+  {%                          % before
+    \scshape
   }
