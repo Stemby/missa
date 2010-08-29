@@ -57,7 +57,10 @@ green,violet,white,red,rose,black}[green]{%
 
 \newcommand{\amen}{Amen.}
 \newcommand{\tbtg}{Rendiamo grazie a Dio.}
+
 \newcommand{\kyrie}{Kyrie, el\'eison.}
+\newcommand{\hallelujah}{Alleluia.}
+\newcommand{\creed}{\input{creed.tex}}
 
 \newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Pausa di silenzio)}}
 
