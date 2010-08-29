@@ -51,9 +51,9 @@ green,violet,white,red,rose,black}[green]{%
 \ProcessOptionsX
 
 % Commands
-\newcommand{\priest}[2][S]{\textcolor{\missa@litcolor}{#1}\hspace{1em}#2}
-\newcommand{\all}[2][T]{\textcolor{\missa@litcolor}{#1}\hspace{1em}{\bfseries#2}}
-\newcommand{\reader}[2][L]{\textcolor{\missa@litcolor}{#1}\hspace{1em}#2}
+\newcommand{\priest}[2][S]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
+\newcommand{\all}[2][T]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}{\bfseries#2}}
+\newcommand{\reader}[2][L]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
 
 \newcommand{\amen}{Amen.}
 \newcommand{\tbtg}{Rendiamo grazie a Dio.}
@@ -63,6 +63,7 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\creed}{\input{creed.tex}}
 
 \newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Pausa di silenzio)}}
+\newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
 
 \newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries R}}
 
