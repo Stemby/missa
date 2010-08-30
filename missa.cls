@@ -53,7 +53,7 @@ green,violet,white,red,rose,black}[green]{%
 % Commands
 \newcommand{\priest}[2][S]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
 \newcommand{\all}[2][T]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}{\bfseries#2}}
-\newcommand{\reader}[2][L]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
+\newcommand{\lector}[2][L]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
 
 \newcommand{\amen}{Amen.}
 \newcommand{\kyrie}{Kyrie, el\'eison.}
