@@ -56,16 +56,23 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\reader}[2][L]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
 
 \newcommand{\amen}{Amen.}
+\newcommand{\kyrie}{Kyrie, el\'eison.}
+\newcommand{\christe}{Christe, el\'eison.}
+\newcommand{\alleluia}{Alleluia.}
 \newcommand{\tbtg}{Rendiamo grazie a Dio.}
 
-\newcommand{\kyrie}{Kyrie, el\'eison.}
-\newcommand{\hallelujah}{Alleluia.}
+\newcommand{\gloria}{\input{gloria.tex}}
 \newcommand{\creed}{\input{creed.tex}}
+\newcommand{\sanctus}{\input{sanctus.tex}}
+
 
 \newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Pausa di silenzio)}}
 \newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
 
 \newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries R}}
+
+\newcommand{\reference}[1]{{\footnotesize#1}}
+\newcommand{\cantemus}[1]{CD~#1}
 
 \LoadClass[11pt]{article}
 
