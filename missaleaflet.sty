@@ -4,10 +4,10 @@
 \RequirePackage{xparse,calc}
 \DeclareDocumentCommand\makecolorbox{o m O{\width} O{c} m}{%
   \IfNoValueTF{#1}{\colorbox{#2}}{\colorbox[#1]{#2}}%
-    {\makebox[#3-2\fboxsep][#4]{#5}}}
+    {\makebox[#3][#4]{#5}}}
 \DeclareDocumentCommand\framecolorbox{o m m O{\width} O{c} m}{%
   \IfNoValueTF{#1}{\fcolorbox{#2}{#3}}{\fcolorbox[#1]{#2}{#3}}%
-    {\makebox[#4-2\fboxsep-2\fboxrule][#5]{#6}}}
+    {\makebox[#4][#5]{#6}}}
 
 % Paper size: 2 * B5 JIS = B4 JIS
 \geometry{b5j,margin=16mm,columnsep=8mm,twocolumn}
@@ -22,7 +22,7 @@
   {0pt}                       % separation between label and title
   {%                          % before
     \scshape
-    \framecolorbox{\missa@litcolor}{\missa@litcolor}[\columnwidth]
+    \framecolorbox{\missa@litcolor}{\missa@litcolor}[\columnwidth-2\fboxsep-2\fboxrule]
   }
 \titleformat{\subsection}
   {\large\bfseries\color{\missa@litcolor}} % format
