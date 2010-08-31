@@ -7,7 +7,7 @@
 *.eps
 *.pdf
 geometry.*
-bibleref.sty
+bibleref/*
 lilypond.sty
 config.ly
 testlily-*

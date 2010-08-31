@@ -1,5 +1,5 @@
 % test.tex 
-\documentclass[leaflet,rite=ambrosian,litcolor=red]{missa}
+\documentclass[leaflet,rite=ambrosian,litcolor=red,biblerefstyle=CEI]{missa}
 \usepackage[utf8x]{inputenc}
 \usepackage[italian]{babel}
 \usepackage[T1]{fontenc}
@@ -17,12 +17,13 @@
 %\dayofweekname{31}{10}{2002}
 
 \section{Liturgia vigiliare vespertina}
+\subsection{Vangelo della Risurrezione}
 \lipsum[1]
 
 \section{Riti di introduzione}
 \subsection{All'ingresso}
 \lipsum[2]
-\otherwise \hfill \reference{Sal 24,16.18} % use bibleref instead
+\otherwise \hfill \reference{\bibleverse{Psalms}(24:16,18)}
 
 \all{Volgi il tuo sguardo misericordioso sopra di me, Signore, perché sono povero e solo. Vedi che sono oppresso e travagliato, perdona i miei peccati.}
 \subsection{Atto penitenziale}
@@ -53,10 +54,13 @@
 
 \section{Liturgia della Parola}
 \subsection{Lettura}
+\lipsum[3]
 
 \subsection{Salmo}
 \all{Ascolta, Signore, il povero che t'invoca.}
+\par\null
 \lilypondfile{lily/testlily}
+\null\par
 \lector{Porgi l'orecchio, Signore, alle mie parole: intendi il mio lamento. Sii attento alla voce del mio grido, o mio re e mio Dio, perché a te, Signore, rivolgo la mia preghiera.}~\R
 
 \lector{Tu non sei un Dio che gode del male, non è tuo ospite il malvagio; gli stolti non resistono al tuo sguardo.}~\R
