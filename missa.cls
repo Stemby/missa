@@ -63,7 +63,11 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\kyrie}{Kyrie, el\'eison.}
 \newcommand{\christe}{Christe, el\'eison.}
 \newcommand{\alleluia}{Alleluia.}
-\newcommand{\tbtg}{Rendiamo grazie a Dio.}
+\newcommand{\twotl}{Parola di Dio.} % The Word of the Lord.
+\newcommand{\tbtg}{Rendiamo grazie a Dio.} % Thanks be to God!
+\newcommand{\gtyl}{Gloria a te, o Signore.} % Glory to you, Lord!
+\newcommand{\tgotl}{Parola del Signore.} % The Gospel of the Lord.
+\newcommand{\ptyljc}{Lode a te, o Cristo.} % Praise to you, Lord Jesus Christ!
 
 \newcommand{\gloria}{\input{gloria.tex}}
 \newcommand{\creed}{\input{creed.tex}}
@@ -72,6 +76,7 @@ green,violet,white,red,rose,black}[green]{%
 
 \newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Pausa di silenzio)}}
 \newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
+\newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Altre intenzioni)}}
 
 \newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries R}}
 

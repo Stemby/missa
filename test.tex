@@ -8,8 +8,11 @@
 
 %\usepackage[short]{datetime}
 
+\newcommand{\TODO}{\makecolorbox{green}{\textcolor{red}{TODO}}}
+
 \title{La Messa}
 \author{Carlo Stemberger}
+\date{12 settembre 2010} % use datetime instead
 
 \begin{document}
 %\maketitle
@@ -21,105 +24,174 @@
 \lipsum[1]
 
 \section{Riti di introduzione}
-\subsection{All'ingresso}
-\lipsum[2]
-\otherwise \hfill \reference{\bibleverse{Psalms}(24:16,18)}
+\subsection{All'ingresso}\TODO \reference{\cantemus{8}}\par
+\R \hfill \TODO
 
-\all{Volgi il tuo sguardo misericordioso sopra di me, Signore, perché sono povero e solo. Vedi che sono oppresso e travagliato, perdona i miei peccati.}
+Quando tu ci chiami, o Signore,\\
+gioisce i cuore se tu ci parli.\\
+Oggi tu ci inviti alla tua mensa\\
+e noi cantiamo a te, o Signore.
+
+Benedirò il Signore ora e sempre, in ogni tempo: sulla mia bocca sempre avrò la sua lode. \R
+
+Gustate e vedete quanto è buono il Signore: felice l'uomo che in lui si rifugia. \R
+
+\otherwise \hfill \reference{\bibleverse{Psalms}(118:137,124)}
+
+\all{Tu sei giusto, Signore, e retto nei tuoi giudizi; usa misericordia col tuo servo.}
+
 \subsection{Atto penitenziale}
-\priest{Fratelli carissimi, con fiducia disponiamoci al pentimento e riconosciamo i nostri peccati, perché il Signore, nella sua infinita misericordia, ci doni di partecipare a questa celebrazione con una coscienza pura e un cuore lieto e operoso.}
+\priest{Fratelli e sorelle, invitati dal Signore alla sua mensa di salvezza, con fiducia, riconosciamoci tutti peccatori e, perdonandoci a vicenda dal profondo del cuore, invochiamo la misericordia di Dio.}
 
 \silence
 
-\priest{Tu che ti sei fatto povero per arricchirci: \kyrie}
+\priest{Tu, Figlio di Dio, che sei stato annunciato dai profeti e atteso dai giusti: \kyrie}
 
 \all{\kyrie}
 
-\priest{Tu che sei il difensore dei poveri e il rifugio dei deboli: \kyrie}
+\priest{Tu, Figlio dell'uomo, che hai posto le radici nel popolo dell'alleanza e ci fai eredi dell'antica promessa: \kyrie}
 
 \all{\kyrie}
 
-\priest{Tu che perdoni molto a chi molto ama: \kyrie}
+\priest{Tu, Figlio unigenito del Padre, che giustifichi nella fede che opera per mezzo della carità: \kyrie}
 
 \all{\kyrie}
 
 \priest{Dio onnipotente abbia misericordia di noi, perdoni i nostri peccati e ci conduca alla vita eterna.} \hfill
 \all{\amen}
 
-\subsection{Gloria}
-\subsection{inizio dell'assemblea liturgica}
-\priest{Preghiamo.\hfill\silence \\ O Dio, che nel tuo ineffabile amore hai creato l'universo, donaci di adorarti sempre con tutto il nostro essere e di amare ogni uomo con affetto giusto e fraterno. Per Gesù~Cristo\dots}
+\subsection{Gloria}\TODO \reference{\cantemus{24}}\par
+\all{\gloria}
 
+\subsection{inizio dell'assemblea liturgica}
+\priest{Preghiamo.\hfill\silence \\ Serbaci nella tua fedeltà, o Dio vivo e vero, e conforta con la tua grazia i nostri cuori; donaci di attendere con gioiosa dedizione al canto della tua lode e di crescere nell'amore fraterno. Per Gesù~Cristo, %\dots}
+tuo Figlio, nostro Signore e nostro Dio, che vive e regna con te, nell'unità dello Spirito Santo, per tutti i secoli dei secoli.} \hfill
 \all{\amen}
 
 \section{Liturgia della Parola}
-\subsection{Lettura}
+\subsection{Lettura}\TODO \reference{\bibleverse{Isaiah}(5:1-7)}\par
+\TODO\par\TODO\par
 \lipsum[3]
+\twotl% \hfill \all{\tbtg}
 
-\subsection{Salmo}
-\all{Ascolta, Signore, il povero che t'invoca.}
+\all{\tbtg}
+
+\subsection{Salmo}\TODO \reference{\bibleverse{Psalms}(79:)~(80)}\par % TODO: verify psalms syntax
+\all{La vigna del Signore è il suo popolo.}
 \par\null
-\lilypondfile{lily/testlily}
+\lilypondfile{lily/testlily} % TODO: "èil" → "è il"; separate stems
 \null\par
-\lector{Porgi l'orecchio, Signore, alle mie parole: intendi il mio lamento. Sii attento alla voce del mio grido, o mio re e mio Dio, perché a te, Signore, rivolgo la mia preghiera.}~\R
+\lector{Hai sradicato una vite dell'Egitto, hai scacciato le genti e l'hai trapiantata. Ha esteso i suoi tralci fino al mare, e arrivavano al fiume i suoi germogli.}~\R
 
-\lector{Tu non sei un Dio che gode del male, non è tuo ospite il malvagio; gli stolti non resistono al tuo sguardo.}~\R
+\lector{Dio degli eserciti, ritorna! Guarda dal cielo e vedi e visita questa vigna, proteggi quello che la tua destra ha piantato, il figlio dell'uomo che per te hai reso forte.}~\R
 
-\lector{Tu hai in odio tutti i malfattori, tu distruggi chi dice menzogne. Sanguinari e ingannatori, il Signore li detesta.}~\R
+\lector{Da te mai più ci allontaneremo, facci rivivere e noi invocheremo il tuo nome. Signore, Dio degli eserciti, fa' che ritorniamo, fa' splendere il tuo volto e noi saremo salvi.}~\R
 
-\subsection{Epistola}
+\subsection{Epistola}\TODO \reference{\bibleverse{Galatians}(2:15-20)}\par
+\TODO\par\TODO\par
+\lipsum[4]
+\twotl% \hfill \all{\tbtg}
 
-\subsection{Canto al Vangelo}
+\all{\tbtg}
+
+\subsection{Canto al Vangelo}\TODO \reference{Cf~\bibleverse{Matthew}(8:11)~(\cantemus{40})}\par
+
 \all{\alleluia}
 
-\lector{Beati coloro che custodiscono la parola di Dio con cuore integro e buono e producono frutto con perseveranza.}~\R
+\lector{Molti verranno dall'oriente e dall'occidente, dice il Signore, e siederanno a mensa nel regno dei cieli.}~\R
 
-\subsection{Vangelo}
+\subsection{Vangelo}\TODO \reference{\bibleverse{Matthew}(21:28-32)}\par
+\TODO\par\TODO\par\TODO\par
+\all{\gtyl}
 
-\subsection{Dopo il Vangelo}
+\lipsum[5]
+\tgotl% \hfill \all{\ptyljc}
+
+\all{\ptyljc}
+
+\subsection{Dopo il Vangelo}\TODO \reference{\cantemus{502}}\par
+Ricorda la promessa fatta al tuo servo,\\
+con la quale mi hai dato speranza.\\
+Questo mi consola nella mia miseria;\\
+la tua Parola mi dona la vita.
+
+\otherwise \hfill \reference{\bibleverse{Psalms}(101:12-13)}
+
+\all{I miei giorni sono come ombra che declina, come l'erba tagliata inaridisco. Ma tu, Signore, rimani in eterno, il tuo ricordo per ogni generazione.}
 
 \subsection{Preghiera universale}
-\priest{Fratelli e sorelle, animati da carità sincera, eleviamo la nostra unanime preghiera a Dio, principio di ogni bontà e bellezza.}
+\priest{Fratelli e sorelle, «il Signore è giusto e retto nei suoi giudizi»: confortati dalla sua bontà e misericordia, presentiamo a lui le nostre preghiere.}
 
-\all{Ascoltaci, Signore.}
+\all{Vieni, Signore, visita la tua vigna!}
 
-\lector{Per la Chiesa, perché si allontani da ciò che è fuggevole e vano e, con libertà, orienti il proprio cuore ai beni eterni: preghiamo.}~\R
+\lector{Per la Chiesa, perché sia segno visibile ed efficace dell'azione e della cura di Dio per ogni uomo: preghiamo.}~\R
 
-\lector{Per l'umanità intera, perché, abbandonando l'egoismo e l'indifferenza del mondo, percorra la via della giustizia, del dialogo e della solidarietà: preghiamo.}~\R
+\lector{Per i governanti, perché difendano la dignità della persona e, con fermezza, si oppongano a ogni forma di ingiustizia e di sopruso: preghiamo.}~\R
 
-\lector{Per ciascuno di noi, perché, nell'amore sincero per Dio e i fratelli, trovi quanto è essenziale per la vita: preghiamo.}~\R
+\lector{Per noi, perché, riconoscendo i doni del Signore, sappiamo crescere ogni giorno portando frutti di amore, di fraternità e di pace: preghiamo.}~\R
+
+\petitions
 
 \subsection{Conclusione liturgia della Parola}
-\priest{La tua grazia, o Dio onnipotente, ci protegga e ci serbi nel tuo servizio; e, poiché senza di te non possiamo operare secondo giustizia, donaci tu di piacerti in tutta la nostra vita. Per Cristo nostro Signore.} \hfill
-\all{\amen}
+\priest{Non abbandonarci, o Dio, e non privarci dei tuoi doni di grazia; venga dalla pietà del tuo cuore di padre quanto non è dato di compiere alla nostra debolezza. Per Cristo nostro Signore.} \hfill \all{\amen}
 
 \section{Liturgia eucaristica}
 \subsection{Professione di fede}
 \all{\creed}
 
 \subsection{Sui doni}
-\priest{Accogli, o Padre, l'offerta del tuo popolo; esaudisci la fiduciosa preghiera e santifica i nostri giorni. Per Cristo nostro Signore.} \hfill
-\all{\amen}
+\priest{Accogli, o Dio, le nostre offerte in questo incontro mirabile della nostra povertà e della tua grandezza: noi ti presentiamo le cose che da te ci provengono, tu donaci in cambio te stesso. Per Cristo nostro Signore.} \hfill \all{\amen}
 
 \subsection{Prefazio}
-\priest{È veramente cosa buona e giusta renderti grazie, o Dio di infinita potenza. Tu doni alla Chiesa di Cristo di celebrare misteri ineffabili nei quali la nostra esiguità di creature mortali si insublima in un rapporto eterno, e la nostra esistenza nel tempo comincia a fiorire nella vita senza fine. Così, seguendo il tuo disegno d'amore, l'uomo trascorre da una condizione di morte a una prodigiosa salvezza. Ammiràti e felici, noi ci uniamo al coro di tutte le voci che in terra e in cielo cantano la tua gloria e nella comune letizia eleviamo l'inno di lode:}% \hfill
-%\all{Santo\dots}
+\priest{È veramente cosa buona e giusta esaltarti, Dio di misericordia infinita. Cristo Signore nostro, nascendo dalla Vergine, ci ha liberato dall'antica decadenza e ha rinnovato la nostra natura mortale. Con la sua passione ha espiato le nostre colpe, con la sua risurrezione ci ha aperto il varco alla vita eterna e con la sua ascensione alla tua gloria, o Padre, ci ha dischiuso le porte del regno. Per questo disegno di grazia, uniti a tutte le voci adoranti del cielo e della terra, eleviamo a te, unico e immenso Dio col Figlio e con lo Spirito Santo, l'inno della triplice lode:}
 
-\all{\sanctus} \hfill \reference{\cantemus{76}}
+%\all{\sanctus}
+\all{Santo\dots}
+\hfill \reference{\cantemus{99}}
 
-\subsection{Anamnesi}
+\subsection{Anamnesi}\TODO \reference{\cantemus{89}}\par
 \priest{Mistero della fede.}
 
 \all{Annunziamo la tua morte, Signore, proclamiamo la tua risurrezione, nell'attesa della tua venuta.}
 
-\subsection{Allo spezzare del pane}
+\subsection{Allo spezzare del pane}\TODO \reference{\cantemus{588}}\par
+Vino, versato ai discepoli,\\
+sangue di un Dio crocifisso,\\
+in te la nostra gioia, in te!\\
+in te la nostra gioia.
+
 \otherwise
 
-\all{Fa' splendere il tuo volto sul tuo servo e salvami, per tua misericordia. Che io non resti confuso, Signore, perché ti ho invocato.}
+\all{Il Pane di vita è spezzato, il Calice è benedetto. Il tuo corpo ci nutra, o Dio nostro, il tuo sangue ci dia vita e ci salvi.}
 
 \subsection{Alla Comunione}
+Pane di vita nuova,\\
+vero cibo dato agli uomini,\\
+nutrimento che sostiene il mondo,\\
+dono splendido di grazia.
+
+\R \hfill \TODO\par
+Pane della vita,\\
+sangue di salvezza,\\
+vero corpo, vera bevanda,\\
+cibo di grazia per il mondo.
+
+Tu sei sublime frutto\\
+di quell'albero di vita\\
+che Adamo non poté toccare:\\
+ora è in Cristo a noi donato.~\R
+
+Sei l'Agnello immolato\\
+nel cui sangue è la salvezza,\\
+memoriale della vera pasqua\\
+della nuova Alleanza.~\R
+
+\otherwise: \hfill \reference{\bibleverse{Psalms}(103:33-34)}
+
+\all{Finché avrò vita canterò al Signore, finché esisto, voglio inneggiare a Dio. A lui sia gradito il mio canto, in lui sarà la mia gioia.}
+
 \subsection{Dopo la Comunione}
-\priest{Preghiamo.\hfill\silence \\ O Dio, che ci hai resi partecipi dell'unico Pane e dell'unico Calice, fa' che portiamo frutti di vita eterna per la salvezza del mondo, poi che ci concedi la gioia di essere una sola cosa in Cristo Signore, che vive e regna nei secoli dei secoli.}
+\priest{Preghiamo.\hfill\silence \\ O Dio, che alla tua mensa ci hai nutrito col Pane del cielo, fa' che questo divino alimento ravvivi in noi l'amore per te e ci spinga a vederti e a servirti nei nostri fratelli. Per Cristo nostro Signore.}
 
 \all{\amen}
 
