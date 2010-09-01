@@ -69,9 +69,9 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\tgotl}{Parola del Signore.} % The Gospel of the Lord.
 \newcommand{\ptyljc}{Lode a te, o Cristo.} % Praise to you, Lord Jesus Christ!
 
-\newcommand{\gloria}{\input{gloria.tex}}
-\newcommand{\creed}{\input{creed.tex}}
-\newcommand{\sanctus}{\input{sanctus.tex}}
+\newcommand{\gloria}{\input{prayers/gloria.tex}}
+\newcommand{\creed}{\input{prayers/creed.tex}}
+\newcommand{\sanctus}{\input{prayers/sanctus.tex}}
 
 
 \newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Pausa di silenzio)}}
