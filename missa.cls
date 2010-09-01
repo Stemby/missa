@@ -7,7 +7,7 @@
 \RequirePackage[a5paper]{geometry}[2010-02-12] % I have to declare a page format: why?
 \RequirePackage{color}
 \RequirePackage[jerusalem]{bibleref}
-\RequirePackage[staffsize=15.87]{lilypond}
+\RequirePackage[staffsize=15.87,between-system-space=16]{lilypond}
 
 % New colours
 \definecolor{DartmouthGreen}{rgb}{0,0.4392,0.2353} % RGB (0, 112, 60)
