@@ -1,6 +1,7 @@
 *~
 *.backup
 *.gz
+*busy*
 *.aux
 *.lil
 *.log
