@@ -6,6 +6,8 @@
 %\RequirePackage{ifthen}
 \RequirePackage[a5paper]{geometry}[2010-02-12] % I have to declare a page format: why?
 \RequirePackage{color}
+%\RequirePackage{textcomp} % for recipe sign
+\RequirePackage{bbding} % for cross
 \RequirePackage[jerusalem]{bibleref}
 \RequirePackage[staffsize=15.87,between-system-space=16]{lilypond}
 \RequirePackage{fixltx2e}% for \MakeRobust
@@ -91,7 +93,8 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Altre intenzioni)}}
 
 \newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries R}}
-\newcommand{\cross}{\textcolor{\missa@litcolor}{\dag}{ }}
+%\newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries \textrecipe}}
+\newcommand{\cross}{\textcolor{\missa@litcolor}{\Cross}{ }}
 
 \newcommand{\reference}[1]{{\footnotesize#1}}
 \newcommand{\cantemus}[1]{CD~#1}
