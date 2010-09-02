@@ -8,6 +8,7 @@
 \RequirePackage{color}
 \RequirePackage[jerusalem]{bibleref}
 \RequirePackage[staffsize=15.87,between-system-space=16]{lilypond}
+\RequirePackage{fixltx2e}% for \MakeRobust
 
 % New colours
 \definecolor{DartmouthGreen}{rgb}{0,0.4392,0.2353} % RGB (0, 112, 60)
@@ -55,6 +56,15 @@ green,violet,white,red,rose,black}[green]{%
 \ProcessOptionsX
 
 % Commands
+\MakeRobust{\bibleverse}
+\MakeRobust{\footnote}
+\MakeRobust{\linebreak}
+\newcommand{\moment}[2][]{\subsection{#2\put@reference{#1}}}
+\DeclareRobustCommand\put@reference[1]{%
+  {\unskip\nobreak\hfil\penalty50 \hspace{2em}\null\nobreak\hfil
+   \mbox{\color{black}\normalfont\reference{#1}}%
+   \parfillskip=0pt \par}}
+
 \newcommand{\priest}[2][S]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
 \newcommand{\all}[2][T]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}{\bfseries#2}}
 \newcommand{\lector}[2][L]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
@@ -64,7 +74,7 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\christe}{Christe, el\'eison.}
 \newcommand{\alleluia}{Alleluia.}
 \newcommand{\twotl}{Parola di Dio.} % The Word of the Lord.
-\newcommand{\tbtg}{Rendiamo grazie a Dio.} % Thanks be to God!
+\newcommand{\tbtg}[1][.]{Rendiamo grazie a Dio#1} % Thanks be to God!
 \newcommand{\gtyl}{Gloria a te, o Signore.} % Glory to you, Lord!
 \newcommand{\tgotl}{Parola del Signore.} % The Gospel of the Lord.
 \newcommand{\ptyljc}{Lode a te, o Cristo.} % Praise to you, Lord Jesus Christ!
@@ -73,15 +83,20 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\creed}{\input{prayers/creed.tex}}
 \newcommand{\sanctus}{\input{prayers/sanctus.tex}}
 
+\newcommand{\summary}[1]{\textcolor{\missa@litcolor}{\footnotesize#1}}
+\newcommand{\commentary}[1]{{\footnotesize\itshape#1}}
 
 \newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Pausa di silenzio)}}
 \newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
 \newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Altre intenzioni)}}
 
 \newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries R}}
+\newcommand{\cross}{\textcolor{\missa@litcolor}{\dag}{ }}
 
 \newcommand{\reference}[1]{{\footnotesize#1}}
 \newcommand{\cantemus}[1]{CD~#1}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \LoadClass[11pt]{article}
 
@@ -90,3 +105,4 @@ green,violet,white,red,rose,black}[green]{%
 
 % Paragraphs: no indent
 \setlength{\parindent}{0pt}
+%\addtolength{\parskip}{0.5ex plus 0.1ex minus 0.1ex}
