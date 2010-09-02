@@ -1,11 +1,11 @@
 * environment for songs
 * section titles: uppercase
-* improve \moment
 * redefine \maketitle
 * setting correctly white and rose liturgical colour
 * more space between text and music; music: more compact
 * separation between paragraphs
 * improve \otherwise
 * \frenchspacing?
+* \R: use U+211F character ('RESPONSE') instead of "R"
 * bibleref.sty: send the modified file to the author
 * i18n (babel)
