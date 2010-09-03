@@ -2,15 +2,19 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{missa}
 
+% Load article class
+\LoadClass[11pt]{article}
+
+% Packages
 \RequirePackage{xkeyval}
-%\RequirePackage{ifthen}
 \RequirePackage[a5paper]{geometry}[2010-02-12] % I have to declare a page format: why?
 \RequirePackage{color}
 \RequirePackage{pict2e}[2009/06/01] % for response sign
 \RequirePackage{bbding} % for cross
 \RequirePackage[jerusalem]{bibleref}
+\RequirePackage{verse}
 \RequirePackage[staffsize=15.87,between-system-space=16]{lilypond}
-\RequirePackage{fixltx2e}% for \MakeRobust
+\RequirePackage{fixltx2e} % for \MakeRobust
 
 % New colours
 \definecolor{DartmouthGreen}{rgb}{0,0.4392,0.2353} % RGB (0, 112, 60)
@@ -112,9 +116,22 @@ green,violet,white,red,rose,black}[green]{%
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 % Environments
-
-% Load article class
-\LoadClass[11pt]{article}
+\setlength{\leftmargini}{0pt}
+\newenvironment{lyrics}
+  {\setlength{\vindent}{2em}
+    \begin{verse}
+  }
+  {\end{verse}}
+\newenvironment{refrain}
+  {\setlength{\leftmargini}{2em}
+    \setlength{\vleftskip}{2em}
+    \begin{verse}
+    \flagverse{Prova}
+    \itshape
+  }
+  {\end{verse}
+    \setlength{\leftmargini}{0pt}
+  }
 
 % Input style
 \RequirePackage{missa\missa@style}
