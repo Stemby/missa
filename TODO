@@ -6,6 +6,5 @@
 * separation between paragraphs
 * improve \otherwise
 * \frenchspacing?
-* \R: use U+211F character ('RESPONSE') instead of "R"
 * bibleref.sty: send the modified file to the author
 * i18n (babel)
