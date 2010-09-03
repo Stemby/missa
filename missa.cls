@@ -107,7 +107,7 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
 \newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Altre intenzioni)}}
 
-\newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries \Response}}
+\newcommand{\R}{\textcolor{\missa@litcolor}{\normalfont\bfseries \Response}}
 \newcommand{\cross}{\textcolor{\missa@litcolor}{\Cross}{ }}
 
 \newcommand{\reference}[1]{{\footnotesize#1}}
@@ -118,16 +118,17 @@ green,violet,white,red,rose,black}[green]{%
 % Environments
 \setlength{\leftmargini}{0pt}
 \newenvironment{lyrics}
-  {\setlength{\vindent}{2em}
+  {\setlength{\vindent}{0pt}
     \begin{verse}
   }
   {\end{verse}}
+
 \newenvironment{refrain}
   {\setlength{\leftmargini}{2em}
-    \setlength{\vleftskip}{2em}
-    \begin{verse}
-    \flagverse{Prova}
+    \setlength{\vleftskip}{1em}
     \itshape
+    \begin{verse}
+    \flagverse{\R}
   }
   {\end{verse}
     \setlength{\leftmargini}{0pt}
