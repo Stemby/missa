@@ -6,7 +6,7 @@
 %\RequirePackage{ifthen}
 \RequirePackage[a5paper]{geometry}[2010-02-12] % I have to declare a page format: why?
 \RequirePackage{color}
-%\RequirePackage{textcomp} % for recipe sign
+\RequirePackage{pict2e}[2009/06/01] % for response sign
 \RequirePackage{bbding} % for cross
 \RequirePackage[jerusalem]{bibleref}
 \RequirePackage[staffsize=15.87,between-system-space=16]{lilypond}
@@ -22,6 +22,14 @@
 \newcommand{\missa@litcolor}{DartmouthGreen} % liturgical colour
 \newcommand{\missa@titlecolor}{white} % title colour
 \newcommand{\missa@rite}{roman} % rite
+
+% Response sign
+\newcommand\Response{{%
+\setbox0\hbox{R}
+\unitlength\ht0
+\picture(0,0)\linethickness{.075\unitlength}
+\polyline(0.2,-0.3)(.7,1.2)(0.2,1.35)
+\endpicture\box0}}
 
 % Options
 \DeclareOptionX{leaflet}{}
@@ -92,8 +100,7 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
 \newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Altre intenzioni)}}
 
-\newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries R}}
-%\newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries \textrecipe}}
+\newcommand{\R}{\textcolor{\missa@litcolor}{\bfseries \Response}}
 \newcommand{\cross}{\textcolor{\missa@litcolor}{\Cross}{ }}
 
 \newcommand{\reference}[1]{{\footnotesize#1}}
