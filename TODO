@@ -1,5 +1,6 @@
 * environment for songs
 * section titles: uppercase
+* \all, \priest and \lector: first letter of the text at the same distance from the left border
 * redefine \maketitle
 * setting correctly white and rose liturgical colour
 * more space between text and music; music: more compact
