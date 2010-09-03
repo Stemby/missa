@@ -93,6 +93,9 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\creed}{\input{prayers/creed.tex}}
 \newcommand{\sanctus}{\input{prayers/sanctus.tex}}
 
+\newcommand{\reading}[1][]{\input{readings/reading#1.tex}}
+\newcommand{\gospel}[1][]{\input{readings/gospel#1.tex}}
+
 \newcommand{\summary}[1]{\textcolor{\missa@litcolor}{\footnotesize#1}}
 \newcommand{\commentary}[1]{{\footnotesize\itshape#1}}
 
@@ -108,6 +111,9 @@ green,violet,white,red,rose,black}[green]{%
 
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
+% Environments
+
+% Load article class
 \LoadClass[11pt]{article}
 
 % Input style
