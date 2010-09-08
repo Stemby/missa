@@ -1,2 +1,26 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{missabooklet}
+
+\RequirePackage{multicol}
+
+% Layout
+\geometry{vmargin={16mm,20mm}}
+\geometry{nohead}
+
+\usepackage{titlesec} % is it possible to put it into the .cls file?
+\titleformat{\section}
+  {\large\bfseries\color{\missa@titlecolor}} % format
+  {}                          % label (the number)
+  {0pt}                       % separation between label and title
+  {%                          % before
+    \scshape
+    \framecolorbox{\missa@litcolor}{\missa@litcolor}[\columnwidth-2\fboxsep-2\fboxrule]
+  }
+\titleformat{\subsection}
+  {\large\bfseries\color{\missa@litcolor}} % format
+  {}                          % label (the number)
+  {0pt}                       % separation between label and title
+  {%                          % before
+    \scshape
+  }
+\titlespacing*{\subsection}{0pt}{*3}{-1.5ex plus .2ex}

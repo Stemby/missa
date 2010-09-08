@@ -1,14 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{missaleaflet}
 
-\RequirePackage{xparse,calc}
-\DeclareDocumentCommand\makecolorbox{o m O{\width} O{c} m}{%
-  \IfNoValueTF{#1}{\colorbox{#2}}{\colorbox[#1]{#2}}%
-    {\makebox[#3][#4]{#5}}}
-\DeclareDocumentCommand\framecolorbox{o m m O{\width} O{c} m}{%
-  \IfNoValueTF{#1}{\fcolorbox{#2}{#3}}{\fcolorbox[#1]{#2}{#3}}%
-    {\makebox[#4][#5]{#6}}}
-
 % Paper size: 2 * B5 JIS = B4 JIS
 \geometry{b5j,margin=16mm,columnsep=8mm,twocolumn}
 \geometry{nohead}
