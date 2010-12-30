@@ -97,7 +97,7 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\aawy}{E con il tuo spirito.} % And also with you.
 \newcommand{\amen}{Amen.}
 \newcommand{\kyrie}{Kyrie, el\'eison.}
-\newcommand{\threekyrie}{Kyrie el\'eison, kyrie el\'eison, kyrie el\'eison.}
+\newcommand{\threekyrie}{Kyrie el\'eison, Kyrie el\'eison, Kyrie el\'eison.}
 \newcommand{\christe}{Christe, el\'eison.}
 \newcommand{\alleluia}{Alleluia.}
 \newcommand{\lup}{Preghiamo.} % Let us pray.
@@ -119,7 +119,7 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\summary}[1]{\textcolor{\missa@litcolor}{\footnotesize#1}}
 \newcommand{\commentary}[1]{{\footnotesize\itshape#1}}
 
-\newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Pausa~di~silenzio)}}
+\newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize(\textit{Pausa~di~silenzio})}}
 \newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
 \newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Altre~intenzioni)}}
 
