@@ -91,10 +91,17 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\priest}[2][S]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
 \newcommand{\all}[2][T]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}{\bfseries#2}}
 \newcommand{\lector}[2][L]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}#2}
+\newcommand{\bride}[2][Sposa]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}{\bfseries#2}}
+\newcommand{\groom}[2][Sposo]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}{\bfseries#2}}
+\newcommand{\bridegrooms}[2][Sposi]{\textcolor{\missa@litcolor}{#1}\nobreak\hspace{1em}{\bfseries#2}}
 
 \newcommand{\infshs}{Nel nome del Padre, del Figlio e dello Spirito~Santo.} % In the name of the Father, and of the Son, and of the Holy Spirit.
-\newcommand{\tlbwy}{Il Signore sia con voi} % The Lord be with you.
+\newcommand{\tlbwy}{Il Signore sia con voi.} % The Lord be with you.
 \newcommand{\aawy}{E con il tuo spirito.} % And also with you.
+\newcommand{\luyh}{In alto i nostri cuori.} % Lift up your hearts.
+\newcommand{\wltuthl}{Sono rivolti al Signore.} % We lift them up to the Lord.
+\newcommand{\lugtttlog}{Rendiamo grazie al Signore nostro Dio.} % Let us give thanks to the Lord, our God.
+\newcommand{\iirtghtap}{È cosa buona giusta.} % It is right to give him thanks and praise. % It doesnt' work (encoding problem with È)
 \newcommand{\amen}{Amen.}
 \newcommand{\kyrie}{Kyrie, el\'eison.}
 \newcommand{\threekyrie}{Kyrie el\'eison, Kyrie el\'eison, Kyrie el\'eison.}
@@ -106,12 +113,18 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\gtyl}{Gloria a te, o Signore.} % Glory to you, Lord!
 \newcommand{\tgotl}{Parola del Signore.} % The Gospel of the Lord.
 \newcommand{\ptyljc}{Lode a te, o Cristo.} % Praise to you, Lord Jesus Christ!
+\newcommand{\tcol}{Per Cristo nostro Signore.} % Through Christ our Lord.
+\newcommand{\wpyawgyt}{Noi ti lodiamo e ti rendiamo grazie.} % We praise you and we give you thanks.
+
+\newcommand{\intercession}[2][prega]{{\bfseries#2 \hfill #1 per noi}}
 
 \newcommand{\blessing}{Vi benedica Dio onnipotente, Padre e Figlio \cross e Spirito Santo.} % May almighty God bless you, the Father, and the Son, and the Holy Spirit.
 
 \newcommand{\gloria}{\input{prayers/gloria.tex}}
 \newcommand{\creed}{\input{prayers/creed.tex}}
 \newcommand{\sanctus}{\input{prayers/sanctus.tex}}
+\newcommand{\sanctusla}{\input{prayers/sanctus-la.tex}}
+\newcommand{\ourfather}{\input{prayers/ourfather.tex}}
 
 \newcommand{\reading}[1][]{\input{readings/reading#1.tex}}
 \newcommand{\gospel}[1][]{\input{readings/gospel#1.tex}}
@@ -121,7 +134,7 @@ green,violet,white,red,rose,black}[green]{%
 
 \newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize(\textit{Pausa~di~silenzio})}}
 \newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
-\newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize\itshape(Altre~intenzioni)}}
+\newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize(\textit{Altre~intenzioni})}}
 
 \newcommand{\R}{\textcolor{\missa@litcolor}{\normalfont\bfseries \Response}}
 \newcommand{\cross}{\textcolor{\missa@litcolor}{\Cross}{ }}
