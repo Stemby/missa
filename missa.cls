@@ -83,6 +83,7 @@ green,violet,white,red,rose,black}[green]{%
 \MakeRobust{\footnote}
 \MakeRobust{\linebreak}
 \newcommand{\moment}[2][]{\subsection{#2\put@reference{#1}}}
+\newcommand{\singing}[1][]{\textcolor{\missa@litcolor}{\footnotesize\itshape In canto:}\put@reference{#1}}
 \DeclareRobustCommand\put@reference[1]{%
   {\unskip\nobreak\hfil\penalty50 \hspace{2em}\null\nobreak\hfil
    \mbox{\color{black}\normalfont\reference{#1}}%
