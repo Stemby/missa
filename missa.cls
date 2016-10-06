@@ -135,6 +135,7 @@ green,violet,white,red,rose,black}[green]{%
 
 \newcommand{\silence}{\textcolor{\missa@litcolor}{\footnotesize(\textit{Pausa~di~silenzio})}}
 \newcommand{\otherwise}{\textcolor{\missa@litcolor}{\footnotesize\itshape Oppure:}}
+\newcommand{\afterwards}{\textcolor{\missa@litcolor}{\footnotesize\itshape A seguire:}}
 \newcommand{\petitions}{\textcolor{\missa@litcolor}{\footnotesize(\textit{Altre~intenzioni})}}
 
 \newcommand{\R}{\textcolor{\missa@litcolor}{\normalfont\bfseries \Response}}
