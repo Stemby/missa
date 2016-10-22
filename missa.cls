@@ -15,6 +15,7 @@
 \RequirePackage{verse}
 \RequirePackage[staffsize=15.87,between-system-space=16]{lilypond}
 \RequirePackage{fixltx2e} % for \MakeRobust
+\RequirePackage{adforn} % for ornament break
 
 % New colours
 \definecolor{DartmouthGreen}{rgb}{0,0.4392,0.2353} % RGB (0, 112, 60)
@@ -34,6 +35,13 @@
 \picture(0,0)\linethickness{.075\unitlength}
 \polyline(0.2,-0.3)(.7,1.2)(0.2,1.35)
 \endpicture\box0}}
+
+% Ornament break
+\newcommand{\ornamentbreak}{%
+    \begin{center}
+    \textcolor{\missa@litcolor}{\adforn{21}\adforn{10}\adforn{49}}
+    \end{center}%
+}
 
 % \makecolorbox and \framecolorbox
 \RequirePackage{xparse,calc}
