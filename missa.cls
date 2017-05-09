@@ -130,7 +130,7 @@ green,violet,white,red,rose,black}[green]{%
 \newcommand{\blessing}{Vi benedica Dio onnipotente, Padre e Figlio \cross e Spirito Santo.} % May almighty God bless you, the Father, and the Son, and the Holy Spirit.
 
 \newcommand{\gloria}{\input{prayers/gloria.tex}}
-\newcommand{\creed}{\input{prayers/creed.tex}}
+\newcommand{\creed}[1][1]{\input{prayers/creed#1.tex}}
 \newcommand{\sanctus}{\input{prayers/sanctus.tex}}
 \newcommand{\sanctusla}{\input{prayers/sanctus-la.tex}}
 \newcommand{\ourfather}{\input{prayers/ourfather.tex}}
