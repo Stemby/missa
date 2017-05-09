@@ -173,6 +173,15 @@ green,violet,white,red,rose,black}[green]{%
     \setlength{\leftmargini}{0pt}
   }
 
+\newenvironment{dedication}
+  {\null\vspace{\stretch{1}}
+    \begin{flushright}
+    \itshape
+  }
+  {\end{flushright}
+    \vspace{\stretch{2}}\null
+  }
+
 % Input style
 \RequirePackage{missa\missa@style}
 
