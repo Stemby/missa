@@ -7,6 +7,7 @@
 *.log
 *.eps
 *.pdf
+*.swp
 geometry.*
 bibleref/*
 lilypond.sty
